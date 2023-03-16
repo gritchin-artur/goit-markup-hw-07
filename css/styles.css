@@ -1987,7 +1987,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 @media screen and (min-width: 1200px) {
 
-.section {
+.section-portfolio {
     padding-bottom: 120px;
 
   }
@@ -2011,6 +2011,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 @media screen and (min-width: 1200px) {
   .card-team {
     flex-basis: calc((100% - 72px) / 4);
+  }
+  .back {
+    padding: 120px 0;
   }
 }
 
