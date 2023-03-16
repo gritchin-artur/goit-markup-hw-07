@@ -1942,14 +1942,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 @media screen and (min-width: 1200px) {
 
-  .section {
+  .sub-studio {
     padding: 120px 0;
   }
 
-  .section-portfolio {
-    padding-bottom: 120px;
-
-  }
 
   .social-studio-link {
     display: flex;
@@ -1990,6 +1986,11 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 /* ======================Portfolio desctop======================= */
 
 @media screen and (min-width: 1200px) {
+
+.section {
+    padding-bottom: 120px;
+
+  }
 
   .section-portfolio {
     display: block;
