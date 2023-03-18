@@ -751,8 +751,9 @@ border: 1.25px solid var(--primary-text-color);
   color: #4D5AE5;
 } */
 
-/* ----------------Portfolio buttons------------- */
-.portfolio-menu {
+/* ----------------Portfolio buttons------------- */ 
+
+/* .portfolio-menu {
   padding-top: 40px;
 }
 .navigation-list-item {
@@ -790,12 +791,12 @@ border: 1.25px solid var(--primary-text-color);
   flex-basis: calc((100% - 96px) / 5);
   min-width: 250px;
 }
-
+ */
 
 
 /* -----------Portfolio (pages)----------- */
 
-.advertising:hover,
+/* .advertising:hover,
 .advertising:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -842,7 +843,7 @@ border: 1.25px solid var(--primary-text-color);
 .portfolio-card-tumb:hover .overlay,
 .portfolio-card-tumb:focus .overlay {
   transform: translate(0, 0);
-}
+} */
 
 
 
@@ -998,7 +999,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     position: fixed;
     width: 100%;
     height: 100%;
-    max-height: 796px;
     top: 0;
     left: 0;
     overflow: auto;
@@ -1421,7 +1421,125 @@ transform: translateX(100%);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 8px 16px 8px 16px;
   color: var(--grey-color);
+} 
+
+/* ======================portfolio mobile========================== */
+/* =======================portfolio mobile buttons==================== */
+
+@media screen and (max-width: 768px) {
+  .portfolio-menu {
+      padding: 48px 0 96px 0;
+    }
+
+.references {
+  padding-bottom: 48px;
+  gap: 16px 24px;
 }
+}
+
+.references {
+  gap: 16px 24px;
+  justify-content: center;
+}
+
+.header-none {
+  display: none;
+}
+.navigation-list-item {
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: 1px solid var(--white-grey-color);
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--blue-gray-color);
+  background-color: var(--grey-color);
+  transition: color var(--transition-duration-and-funk),
+    background-color var(--transition-duration-and-funk),
+    box-shadow var(--transition-duration-and-funk),
+    border var(--transition-duration-and-funk);
+}
+
+.navigation-list-item:hover,
+.navigation-list-item:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--accent-color);
+}
+
+/* =======================portfolio mobile pages==================== */
+
+.advertising:hover,
+.advertising:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+ }
+ 
+ .advertising {
+   min-width: 250px;
+   cursor: pointer;
+   transition: box-shadow var(--transition-duration-and-funk);
+ }
+ .card-content {
+   padding: 32px 16px;
+   outline: 1px solid var(--white-grey-color);
+ }
+
+ .overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   transform: translate(0, 100%);
+   transition: transform var(--transition-duration-and-funk);
+  font-weight: 400;
+    font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   background-color: var(--blue-color);
+   background-blend-mode: soft-light;
+   mix-blend-mode: normal;
+   color: var(--grey-color);
+   font-size: 16px;
+   padding: 40px 32px;
+ }
+
+ .card-tumb {
+   position: relative;
+   overflow: hidden;
+ }
+
+ .portfolio-card-tumb:hover .overlay,
+ .portfolio-card-tumb:focus .overlay {
+   transform: translate(0, 0);
+ }
+
+ .portfolio-subtitle-description {
+  font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    margin-bottom: 8px;
+ }
+
+@media screen and (max-width:768px) {
+  .card-set {
+      justify-content: center;
+      gap: 48px;
+    }
+
+}
+
+
+
+
 
 /* ==================modal window mobile============== */
 
@@ -1863,6 +1981,30 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 
 }
 
+/* =========================portfolio tsablet=================== */
+/* ==========================portfolio tablet buttons================ */
+
+@media screen and (min-width:767px) {
+    .portfolio-menu {
+        padding: 64px 0 96px 0;
+      }
+}
+
+/* ======================portfolio tablet pages=================== */
+
+@media screen and (min-width: 767px) {
+  .advertising {
+    max-width: 356px;
+  }
+  .card-set {
+    gap: 72px 24px;
+  }
+    .references {
+      padding-bottom: 64px;
+    }
+  
+}
+
 
 /* ====================hat desctop menu================= */
 
@@ -2038,3 +2180,24 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     margin-left: 80px;
   }
   }
+
+  /* ====================portfolio desctop=================== */
+  /* ======================portfolio desctop buttons================= */
+    @media screen and (min-width: 1200px) {
+      .portfolio-menu {
+        padding: 96px 0 120px 0;
+      }
+      .references {
+        padding-bottom: 72px;
+      }
+      }
+      /* ====================portfolio desctop pages========== */
+
+      @media screen and (min-width: 1200px) {
+        .card-set {
+          justify-content: center;
+        }
+        .advertising {
+          min-width: 360px;
+        }
+      }
